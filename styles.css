@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;  /* Varmistaa, että navigaatio on aina päällä */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 18px;  /* Parempi fonttikoko */
+}
+
+section {
+    padding: 100px 20px;
+    height: 100vh;
+    margin-top: 50px;  /* Varmistaa, että sisältö ei mene navigaation alle */
+}
+
+#home { background: rgb(107, 110, 110); }
+#about { background: rgb(52, 54, 52); }
+#contact { background: rgb(77, 73, 73); }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input, textarea {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background: #555;
+}
+
+#formFeedback {
+    font-size: 18px;
+    color: green;
+    margin-top: 20px;
+}
